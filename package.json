@@ -7,11 +7,6 @@
     "url": "https://github.com/codedavinci/interset-app.git"
   },
   "author": "Eddie Henrique",
-  "dependencies": {
-    "gulp": "^3.9.1",
-    "gulp-util": "^2.2.20",
-    "gulp-webserver": "^0.8.8"
-  },
   "devDependencies": {
     "angular": "^1.5.5",
     "angular-route": "^1.5.5"
