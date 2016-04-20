@@ -1,0 +1,32 @@
+<section class="card login">
+  <form name="myform"
+    ng-submit="login()"
+    novalidate>
+
+    <div class="textintro">
+      <h1>Good Morning!</h1>
+      <p>Log-in to access Interset Admin!</p>
+      <p class="message" 
+        ng-show="message"> {{ message }}</p>
+    </div>
+
+    <fieldset>
+      <input type="text" name="admin" placeholder="Admin"
+       ng-model="user.admin" ng-required="true">
+      <p class="error validationerror"
+      ng-show="myform.admin.$invalid && myform.admin.$touched">
+      Must be a valid Admin</p>
+
+
+      <input type="password" name="password" placeholder="Password"
+      ng-model="user.password" ng-required="true">
+      <p class="error validationerror"
+      ng-show="myform.password.$invalid && myform.admin.$touched">
+      Password is required</p>
+
+    </fieldset>
+
+    <button type="submit" class="btn"
+      ng-disabled="myform.$invalid">Login</button>
+  </form>
+</section>
